@@ -1,0 +1,64 @@
+---
+id: LV-GOV-001
+title: LUVO Documentation Governance
+owner: documentation-architecture
+domain: governance
+status: approved
+version: 1.0.0
+last_updated: 2026-05-13
+source_of_truth: true
+dependencies: ['canonical-sources-registry', 'adr-policy', 'prompt-governance']
+related_docs: []
+---
+
+
+# LUVO Documentation Governance
+
+## Purpose
+
+This policy governs how LUVO creates, updates, approves and retires documentation.
+
+## Mandatory Rule
+
+No production module is enterprise-ready unless it has:
+
+- canonical Product Sheet
+- canonical Technical Sheet
+- owner
+- version
+- status
+- dependency map
+- changelog
+- ADR reference when architecture changes
+- workflow reference when operational automation exists
+- prompt reference when AI is involved
+
+## Lifecycle
+
+| Status | Meaning |
+| --- | --- |
+| draft | Work in progress |
+| review | Awaiting owner or reviewer approval |
+| approved | Valid and accepted |
+| production | Actively governing production behavior |
+| deprecated | Replaced, but retained |
+| archived | Historical only |
+
+## Ownership
+
+Every document must have exactly one accountable owner. Reviewers may be multiple.
+
+## Source of Truth
+
+Duplicate explanations are prohibited. Supporting docs must link to canonical docs instead of restating core logic.
+
+## Review Triggers
+
+Documentation must be reviewed when:
+
+- a module changes behavior
+- an entity schema changes
+- a prompt changes production output
+- a workflow changes handoff or validation
+- a business model changes
+- an ADR is approved

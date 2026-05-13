@@ -1,0 +1,69 @@
+---
+id: LV-CORE-ADR-001
+title: Canonical Documentation Operating System
+owner: documentation-architecture
+domain: architecture-decision
+status: approved
+version: 1.0.0
+last_updated: 2026-05-13
+source_of_truth: true
+dependencies: ['mintlify', 'github', 'docs-governance']
+related_docs: []
+---
+
+
+# LV-CORE-ADR-001 — Canonical Documentation Operating System
+
+## Status
+
+Approved.
+
+## Context
+
+LUVO is evolving from a simple app into an AI-native modular platform spanning marketplace, tourism, delivery, ads, analytics, providers, geodata and hybrid human-AI operations.
+
+## Problem
+
+Without a canonical documentation system, LUVO risks fragmented knowledge, inconsistent prompts, duplicated logic, untracked decisions, poor onboarding, weak QA and unreliable AI execution.
+
+## Decision
+
+LUVO will operate a Documentation Operating System using:
+
+- Mintlify for documentation publishing
+- GitHub for version control
+- immutable ADRs
+- canonical source registry
+- prompt registry
+- workflow registry
+- product sheets
+- technical sheets
+- governance policies
+- changelogs
+
+## Consequences
+
+All modules must be documented before being treated as production-ready.
+
+## Alternatives Considered
+
+| Alternative | Rejected Because |
+| --- | --- |
+| Ad hoc Notion docs | Weak versioning and harder CI governance |
+| Prompt-only documentation | Not auditable or stable enough |
+| Code comments only | Not accessible to business, operations or AI agents |
+| Mintlify starter structure | Too generic and not LUVO-specific |
+
+## Risks
+
+- Documentation overhead
+- Governance resistance
+- Outdated docs if ownership is ignored
+
+## Mitigation
+
+- Assign owners
+- enforce versioning
+- maintain canonical registry
+- review documentation with every sprint
+- use AI agents to assist updates, not approve them blindly

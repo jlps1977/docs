@@ -1,103 +1,110 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "$schema": "https://mintlify.com/schema.json",
   "name": "LUVO Documentation OS",
   "logo": {
-    "light": "/assets/logo-light.svg",
-    "dark": "/assets/logo-dark.svg"
+    "light": "/assets/luvo-logo-light.svg",
+    "dark": "/assets/luvo-logo-dark.svg"
   },
   "favicon": "/assets/favicon.svg",
   "colors": {
     "primary": "#FF6B4A",
     "light": "#FFF3E8",
-    "dark": "#17141A"
+    "dark": "#17141A",
+    "anchors": {
+      "from": "#FF6B4A",
+      "to": "#36D399"
+    }
   },
   "topbarLinks": [
     {
       "name": "GitHub",
-      "url": "https://github.com/luvo"
+      "url": "https://github.com"
     }
   ],
-  "metadata": {
-    "description": "Enterprise-grade documentation operating system for LUVO: local-first, AI-native, modular platform.",
-    "keywords": "LUVO, documentation, AI workflows, marketplace, ads, tourism, delivery, Mintlify"
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Foundation",
+        "groups": [
+          {
+            "group": "Start Here",
+            "pages": [
+              "index",
+              "00-foundation/ecosystem-overview",
+              "00-foundation/architecture-overview"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Product",
+        "groups": [
+          {
+            "group": "Core Engines",
+            "pages": [
+              "12-marketplace/marketplace-engine.product-sheet",
+              "09-ads/ads-engine.product-sheet"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Engineering",
+        "groups": [
+          {
+            "group": "Architecture",
+            "pages": [
+              "03-engineering/README"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "AI Systems",
+        "groups": [
+          {
+            "group": "Operating System",
+            "pages": [
+              "05-ai/ai-operating-system"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Operations",
+        "groups": [
+          {
+            "group": "Execution",
+            "pages": [
+              "19-sprints/README",
+              "27-changelog/README"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Governance",
+        "groups": [
+          {
+            "group": "Policies",
+            "pages": [
+              "28-governance/GOVERNANCE",
+              "28-governance/canonical-sources-registry",
+              "20-adrs/LV-CORE-ADR-001"
+            ]
+          }
+        ]
+      }
+    ]
   },
-  "navigation": [
-    {
-      "group": "Foundation",
-      "pages": [
-        "docs/00-foundation/luvo-ecosystem-overview",
-        "docs/00-foundation/luvo-architecture-overview",
-        "docs/00-foundation/luvo-ai-operating-system",
-        "docs/00-foundation/canonical-sources-registry",
-        "docs/00-foundation/documentation-lifecycle-policy"
-      ]
-    },
-    {
-      "group": "Product",
-      "pages": [
-        "docs/02-product/modules/marketplace-engine/marketplace-engine.product-sheet",
-        "docs/02-product/modules/ads-engine/ads-engine.product-sheet"
-      ]
-    },
-    {
-      "group": "Engineering",
-      "pages": [
-        "docs/03-engineering/modules/marketplace-engine/marketplace-engine.technical-sheet",
-        "docs/03-engineering/modules/ads-engine/ads-engine.technical-sheet"
-      ]
-    },
-    {
-      "group": "AI Systems",
-      "pages": [
-        "docs/05-ai/agents/ai-agent-governance",
-        "docs/22-workflows/workflow-registry",
-        "docs/21-prompts/prompt-registry"
-      ]
-    },
-    {
-      "group": "Governance",
-      "pages": [
-        "docs/28-governance/governance",
-        "docs/28-governance/adr-governance-policy",
-        "docs/28-governance/prompt-governance-policy",
-        "docs/28-governance/ai-workflow-governance"
-      ]
-    },
-    {
-      "group": "ADRs",
-      "pages": [
-        "docs/20-adrs/architecture/LV-CORE-ADR-001-canonical-documentation-operating-system"
-      ]
-    },
-    {
-      "group": "Operations",
-      "pages": [
-        "docs/19-sprints/2026/sprint-001/sprint-001.report",
-        "docs/27-changelog/changelog",
-        "docs/18-roadmaps/documentation-roadmap"
-      ]
-    }
-  ],
-  "tabs": [
-    {
-      "name": "Foundation",
-      "url": "docs/00-foundation/luvo-ecosystem-overview"
-    },
-    {
-      "name": "Product",
-      "url": "docs/02-product/modules/marketplace-engine/marketplace-engine.product-sheet"
-    },
-    {
-      "name": "Engineering",
-      "url": "docs/03-engineering/modules/marketplace-engine/marketplace-engine.technical-sheet"
-    },
-    {
-      "name": "AI",
-      "url": "docs/05-ai/agents/ai-agent-governance"
-    },
-    {
-      "name": "Governance",
-      "url": "docs/28-governance/governance"
-    }
-  ]
+  "metadata": {
+    "title": "LUVO Documentation Operating System",
+    "description": "Enterprise-grade AI-native documentation system for LUVO, the local-first marketplace, tourism, delivery, ads and analytics platform.",
+    "keywords": "LUVO, documentation, AI-native, marketplace, tourism, delivery, ads, Base44, MCP, Mintlify"
+  },
+  "footerSocials": {},
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": false
+  }
 }

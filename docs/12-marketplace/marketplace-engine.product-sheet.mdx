@@ -1,0 +1,207 @@
+---
+id: LV-MKT-PS-001
+title: Marketplace Engine Product Sheet
+owner: product
+domain: marketplace
+status: approved
+version: 1.0.0
+last_updated: 2026-05-13
+source_of_truth: true
+dependencies: ['provider-system', 'geo-authority-engine', 'ai-enrichment-engine', 'analytics-layer']
+related_docs: []
+---
+
+
+# Marketplace Engine Product Sheet
+
+## Objective
+
+The Marketplace Engine is the core discovery and conversion system for LUVO. It enables users to find restaurants, local places, services, experiences and providers, then move from discovery to action through reservations, ordering, reviews, offers or tourism journeys.
+
+## Problem Solved
+
+Local discovery is fragmented across maps, social media, delivery apps, review platforms and tourism guides. Businesses depend on disconnected channels and often lack visibility, conversion tools and actionable analytics.
+
+LUVO solves this by creating a unified local marketplace where discovery, trust, transaction and provider intelligence operate in one system.
+
+## Primary Actors
+
+| Actor | Role |
+| --- | --- |
+| Local User | Discovers, reviews, orders and reserves |
+| Tourist | Uses marketplace content as local guidance |
+| Provider | Publishes profile, menus, services, offers and availability |
+| Operator | Onboards providers and validates content |
+| AI Agent | Enriches, classifies, tags and improves provider data |
+| Advertiser | Buys visibility through sponsored placements |
+
+## Marketplace Logic
+
+The Marketplace Engine organizes supply around structured provider profiles and user intent.
+
+Core marketplace objects:
+
+- provider profile
+- category
+- location
+- neighborhood
+- menu/service catalog
+- reviews
+- ratings
+- offers
+- reservation entry point
+- ordering entry point
+- sponsored placement eligibility
+- tourism relevance
+- AI-enriched tags
+
+## Discovery
+
+Discovery must support:
+
+- category browsing
+- geographic proximity
+- tourist zones
+- editorial collections
+- AI-enriched tags
+- provider rankings
+- sponsored placements
+- filters
+- reviews and social proof
+- availability and operational status
+
+## Reviews and Trust
+
+Reviews are a trust layer, not a vanity metric.
+
+Review logic must support:
+
+- rating
+- user comments
+- moderation
+- provider response
+- relevance weighting
+- abuse detection
+- tourism-specific context
+- local user credibility
+
+## Reservations
+
+Reservation entry points allow providers to convert intent into bookings.
+
+Reservation logic may include:
+
+- table reservation
+- experience reservation
+- activity booking
+- appointment request
+- provider-managed availability
+- external booking handoff
+
+## Ordering
+
+Ordering must remain modular. Not every marketplace provider requires delivery.
+
+Ordering logic includes:
+
+- menu browsing
+- cart initiation
+- provider acceptance
+- fulfillment method
+- pickup / delivery distinction
+- order status
+- delivery integration
+- provider analytics
+
+## Monetization
+
+Marketplace monetization includes:
+
+| Revenue Line | Description |
+| --- | --- |
+| Provider subscription | Fixed SaaS-style access to visibility/tools |
+| Commission | Transaction-based monetization where operationally viable |
+| Sponsored placements | Paid ranking or featured discovery units |
+| Reservation fees | Lead or booking-based monetization |
+| Content services | Provider profile enrichment, photography or editorial packages |
+| Analytics upgrades | Premium performance reporting |
+| Tourism packages | Experience bundling and local guide monetization |
+
+## KPIs
+
+| KPI | Purpose |
+| --- | --- |
+| Active providers | Supply liquidity |
+| Search-to-profile rate | Discovery relevance |
+| Profile-to-action rate | Conversion strength |
+| Reservation conversion | Booking performance |
+| Order conversion | Transaction performance |
+| Review volume | Trust depth |
+| Sponsored CTR | Ads relevance |
+| Provider retention | Marketplace health |
+| Revenue per provider | Monetization quality |
+
+## AI Integrations
+
+AI supports:
+
+- provider classification
+- category normalization
+- description enrichment
+- tag generation
+- menu cleanup
+- tourism relevance scoring
+- ranking signals
+- review summarization
+- duplicate detection
+- content QA
+- recommendation support
+
+## Geographic Logic
+
+Marketplace ranking must consider:
+
+- city
+- neighborhood
+- distance
+- tourist zone
+- local density
+- open/closed status
+- category concentration
+- user context
+- sponsored eligibility
+- operational reliability
+
+## Dependencies
+
+- Provider System
+- GEO Authority Engine
+- AI Enrichment Engine
+- Ads Engine
+- Analytics Layer
+- Delivery System
+- Tourism Engine
+
+## Risks
+
+| Risk | Control |
+| --- | --- |
+| Low provider quality | Provider onboarding and verification |
+| Sponsored placement trust erosion | Relevance constraints and labeling |
+| Duplicate or dirty data | AI enrichment + human QA |
+| Overcoupling with delivery | Modular ordering boundary |
+| Poor tourism fit | Tourism Engine contextualization |
+
+## Future Expansion
+
+- loyalty programs
+- city passes
+- paid editorial collections
+- dynamic deals
+- provider CRM
+- AI itinerary-linked marketplace recommendations
+- cross-city marketplace replication
+
+## Canonical Rule
+
+This document is the canonical product reference for the Marketplace Engine. Technical implementation belongs in the Marketplace Technical Sheet, not here.

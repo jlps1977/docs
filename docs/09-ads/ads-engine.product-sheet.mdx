@@ -1,0 +1,213 @@
+---
+id: LV-ADS-PS-001
+title: Ads Engine Product Sheet
+owner: ads-growth
+domain: ads
+status: approved
+version: 1.0.0
+last_updated: 2026-05-13
+source_of_truth: true
+dependencies: ['marketplace-engine', 'provider-system', 'analytics-layer', 'ai-ranking', 'geo-authority-engine']
+related_docs: []
+---
+
+
+# Ads Engine Product Sheet
+
+## Objective
+
+The Ads Engine monetizes LUVO discovery traffic by allowing providers and advertisers to buy measurable visibility across marketplace, tourism, geographic and contextual surfaces without compromising user trust.
+
+## Strategic Role
+
+Ads should become one of LUVO's highest-margin revenue lines. The target operating model is a platform revenue stream with strong gross margins because sponsored placements, attribution and targeting are primarily software-driven.
+
+## Core Ad Products
+
+| Product | Description |
+| --- | --- |
+| Sponsored Provider Placement | Provider appears in premium discovery positions |
+| Sponsored Category Placement | Provider appears prominently within a category |
+| Sponsored Tourism Placement | Provider appears inside tourist-facing guides or routes |
+| Sponsored Filter | Paid visibility inside high-intent filters |
+| Featured Deal | Paid promotion for offers or discounts |
+| Local Banner / Native Card | Native ad unit inside LUVO surfaces |
+| Provider Boost | Time-limited visibility multiplier |
+| Future RTB Inventory | Programmatic auction-based inventory vision |
+
+## Sponsored Placements
+
+Sponsored placement must be visible, relevant and measurable.
+
+Rules:
+
+- sponsored units must be labeled
+- ad serving must respect geographic context
+- paid ranking cannot override minimum quality thresholds
+- impressions and interactions must be tracked
+- provider eligibility must be governed
+- ad performance must be visible to the provider
+
+## Geographic Targeting
+
+Geo-targeting supports:
+
+- city
+- neighborhood
+- tourist corridor
+- hotel zone
+- category cluster
+- user proximity
+- route context
+- destination intent
+
+Example:
+
+A restaurant can sponsor visibility for users searching “seafood near Paseo de Montejo” or tourists browsing “where to eat in Mérida tonight”.
+
+## AI Ranking
+
+AI may assist in:
+
+- classifying campaign relevance
+- matching ads to user intent
+- detecting low-quality ad-provider fit
+- summarizing campaign performance
+- recommending optimization actions
+- generating ad copy variants
+- identifying category opportunities
+
+AI must not autonomously approve high-spend campaign strategy without human or policy validation.
+
+## Attribution
+
+The Ads Engine must support attribution across:
+
+- impressions
+- clicks
+- profile views
+- reservation starts
+- order starts
+- completed orders
+- calls / contact actions
+- saved places
+- route adds
+- tourism itinerary engagement
+
+## Analytics
+
+Provider-facing analytics should include:
+
+- spend
+- impressions
+- clicks
+- CTR
+- profile actions
+- reservation intent
+- ordering intent
+- conversion estimate
+- geographic performance
+- time-of-day performance
+- category benchmark
+
+## Monetization
+
+| Model | Use Case |
+| --- | --- |
+| CPM | Awareness campaigns |
+| CPC | Discovery and click-based campaigns |
+| CPA / Lead | Reservations, bookings or contact actions |
+| Fixed Sponsored Slot | Premium local inventory |
+| Subscription Add-On | Provider Pro advertising bundle |
+| Managed Campaign | LUVO-operated campaigns for providers |
+| Future RTB | Programmatic demand at scale |
+
+## Margin Logic
+
+Ads should generate high contribution margin because:
+
+- core inventory is digital
+- placement logic is software-driven
+- analytics are automated
+- campaign setup can be AI-assisted
+- sales and provider success can be semi-automated
+
+Primary costs:
+
+- sales acquisition
+- provider onboarding
+- campaign support
+- analytics infrastructure
+- fraud prevention
+- creative production if managed service
+
+## Future RTB Vision
+
+The future RTB layer may support:
+
+- auction-based sponsored placements
+- contextual bidding
+- geographic bidding
+- provider category bidding
+- tourism intent bidding
+- budget pacing
+- bid caps
+- quality score
+- relevance floor
+
+RTB requires a dedicated ADR before production.
+
+## Provider Ads
+
+Provider ads must be easy for local businesses.
+
+Campaign creation should support:
+
+- objective selection
+- target area
+- category
+- budget
+- duration
+- creative asset
+- promoted offer
+- landing action
+- reporting dashboard
+
+## KPIs
+
+| KPI | Purpose |
+| --- | --- |
+| Ad revenue | Monetization health |
+| Ads margin | Profitability |
+| Active advertisers | Demand-side adoption |
+| Sponsored CTR | Ad relevance |
+| Profile action rate | Provider value |
+| Reservation/order assisted conversion | Business impact |
+| Campaign renewal rate | Retention |
+| Revenue per advertiser | Expansion potential |
+| Fill rate | Inventory utilization |
+| Geo-target performance | Local relevance |
+
+## Risks
+
+| Risk | Mitigation |
+| --- | --- |
+| User trust degradation | Labeling and relevance threshold |
+| Poor advertiser ROI | Analytics and optimization recommendations |
+| Low inventory depth | Category and geography pacing |
+| Click fraud | Anomaly detection and invalid traffic rules |
+| Overcomplexity for SMBs | Simple campaign setup and managed plans |
+
+## Dependencies
+
+- Marketplace Engine
+- Provider System
+- Analytics Layer
+- AI Ranking Workflows
+- GEO Authority Engine
+- Prompt Registry
+- Campaign Entity System
+
+## Canonical Rule
+
+This document is the canonical product reference for the Ads Engine. Auction mechanics, entity schemas and serving implementation belong in the Technical Sheet and ADRs.
