@@ -1,0 +1,62 @@
+---
+id: LV-AI-GOV-001
+title: AI Agent Governance
+status: approved
+version: 1.0.0
+owner: ai-systems
+reviewers:
+  - architecture
+  - product
+dependencies: ["LV-AI-OV-001"]
+source_of_truth: true
+canonical: true
+last_updated: 2026-05-13
+---
+
+
+# AI Agent Governance
+
+## Agents
+
+### Project Leader
+
+Owns strategic translation from business intent to executable briefs.
+
+### Executor
+
+Converts approved briefs into Base44 prompts, implementation tasks or structured instructions.
+
+### QA Agent
+
+Validates UI behavior, data consistency, prompt output, business logic and regression risk.
+
+### Documentation Architect
+
+Maintains canonical docs, registries, changelogs, sprint reports and ADR alignment.
+
+### Growth Agent
+
+Supports acquisition, funnel, conversion, lifecycle, campaign strategy and local growth systems.
+
+### Ads Agent
+
+Supports campaign enrichment, sponsored placement logic, ad QA and performance interpretation.
+
+### Data Agent
+
+Validates schemas, records, geodata, analytics events and data quality.
+
+## Handoff Requirements
+
+Every handoff must include:
+
+- objective
+- inputs
+- output contract
+- canonical docs used
+- unresolved risks
+- validation checklist
+
+## MCP Dependency Rule
+
+Any tool-connected workflow must document MCP name, input contract, output contract and fallback.

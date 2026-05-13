@@ -1,0 +1,36 @@
+---
+id: LV-GOV-POL-003
+title: Prompt Governance Policy
+status: approved
+version: 1.0.0
+owner: ai-systems
+reviewers:
+  - architecture
+  - product
+dependencies: []
+source_of_truth: true
+canonical: true
+last_updated: 2026-05-13
+---
+
+
+# Prompt Governance Policy
+
+All production prompts must be versioned, owned and linked to workflows.
+
+## Required Metadata
+
+- id
+- title
+- owner
+- version
+- status
+- model compatibility
+- input contract
+- output contract
+- guardrails
+- related workflows
+
+## Change Rules
+
+Prompt changes that alter output shape require MINOR version updates. Prompt changes that break workflow compatibility require MAJOR version updates.

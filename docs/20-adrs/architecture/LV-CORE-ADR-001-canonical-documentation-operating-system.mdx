@@ -1,0 +1,76 @@
+---
+id: LV-CORE-ADR-001
+title: Canonical Documentation Operating System
+status: approved
+version: 1.0.0
+owner: architecture
+reviewers:
+  - product
+  - engineering
+  - ai-systems
+dependencies:
+  - LV-CORE-OV-001
+  - LV-CORE-OV-002
+source_of_truth: true
+canonical: true
+related_docs:
+  - docs/00-foundation/luvo-ecosystem-overview.mdx
+  - docs/00-foundation/luvo-architecture-overview.mdx
+created_at: 2026-05-13
+last_updated: 2026-05-13
+---
+
+# LV-CORE-ADR-001 — Canonical Documentation Operating System
+
+## Context
+
+LUVO is evolving into a modular AI-native local-first platform with marketplace, delivery, ads, tourism, provider, geodata, analytics and AI enrichment systems.
+
+## Problem
+
+Without a canonical Documentation Operating System, LUVO faces:
+
+- duplicated logic
+- inconsistent prompts
+- AI execution drift
+- unclear module ownership
+- weak onboarding
+- undocumented dependencies
+- lack of auditability
+- operational debt across Base44 and AI workflows
+
+## Decision
+
+LUVO will adopt a centralized Documentation Operating System using:
+
+- GitHub as versioned source control
+- Mintlify as documentation publishing layer
+- immutable ADRs
+- canonical Product Sheets
+- canonical Technical Sheets
+- Prompt Registry
+- Workflow Registry
+- Governance Policies
+- Changelog System
+- Sprint Registry
+
+## Consequences
+
+All future production modules must include ownership, version, status, dependencies and canonical document references.
+
+## Alternatives Considered
+
+1. Ad hoc Notion/Google Docs knowledge base.
+2. Chat-based memory only.
+3. Developer-only README documentation.
+4. Centralized GitHub + Mintlify DOS.
+
+Option 4 was selected because it supports versioning, auditability, AI-readability and enterprise scaling.
+
+## Tradeoffs
+
+Increases documentation discipline and review overhead, but reduces execution drift, onboarding friction and hidden architectural risk.
+
+## Rollback Strategy
+
+No rollback. Superseding this decision requires a new ADR approved by Architecture Council.

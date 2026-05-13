@@ -1,0 +1,83 @@
+---
+id: LV-ADS-TS-001
+title: Ads Engine Technical Sheet
+status: approved
+version: 1.0.0
+owner: engineering
+reviewers:
+  - architecture
+  - product
+dependencies: ["LV-ADS-PS-001"]
+source_of_truth: true
+canonical: true
+last_updated: 2026-05-13
+---
+
+
+# Ads Engine Technical Sheet
+
+## System Overview
+
+The Ads Engine controls campaign records, eligibility, ad slot serving, impression logging, interaction tracking and reporting.
+
+## Core Services
+
+- getActiveCampaigns
+- serveAdSlot
+- recordAdImpression
+- recordAdInteraction
+- getAdminCampaigns
+- createCampaign
+- updateCampaign
+- pauseCampaign
+- getCampaignMetrics
+
+## Core Entities
+
+- AdCampaign
+- AdImpression
+- AdInteraction
+- UserAdProfile
+- ProviderOpportunity
+
+## Frontend Components
+
+- AdSlot
+- AdminCampaignsPanel
+- ProviderOpportunities
+
+## Serving Logic
+
+Ad serving must consider:
+
+- campaign status
+- geography
+- category
+- placement surface
+- user context when permitted
+- frequency constraints
+- provider eligibility
+- budget availability in later versions
+
+## Attribution
+
+Minimum attribution event chain:
+
+1. Campaign eligible
+2. Ad slot served
+3. Impression recorded
+4. Interaction recorded
+5. Conversion proxy recorded when available
+
+## Failure Modes
+
+- duplicate impressions
+- missing interaction linkage
+- serving inactive campaigns
+- category mismatch
+- geo mismatch
+- cache leakage across geographies
+
+## Security
+
+Campaign management is admin-only. Providers may only access their own campaign performance unless explicitly granted multi-location access.

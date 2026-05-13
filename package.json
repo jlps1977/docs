@@ -1,0 +1,14 @@
+{
+  "name": "luvo-docs-os",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "mintlify dev",
+    "check": "mintlify broken-links",
+    "format": "prettier --write '**/*.{md,mdx,json,yml,yaml}'"
+  },
+  "devDependencies": {
+    "mintlify": "latest",
+    "prettier": "latest"
+  }
+}

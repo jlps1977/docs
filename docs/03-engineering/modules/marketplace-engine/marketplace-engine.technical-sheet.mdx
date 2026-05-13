@@ -1,0 +1,73 @@
+---
+id: LV-MKT-TS-001
+title: Marketplace Engine Technical Sheet
+status: approved
+version: 1.0.0
+owner: engineering
+reviewers:
+  - architecture
+  - product
+dependencies: ["LV-MKT-PS-001"]
+source_of_truth: true
+canonical: true
+last_updated: 2026-05-13
+---
+
+
+# Marketplace Engine Technical Sheet
+
+## System Overview
+
+The Marketplace Engine is the discovery and ranking layer for local providers, restaurants, places, experiences and tourism-relevant entities.
+
+## Components
+
+- Search UI
+- Category navigation
+- Provider cards
+- Place/profile pages
+- Location-aware ranking
+- AI enrichment display
+- Sponsored placement hooks
+
+## Data Dependencies
+
+- Provider records
+- Business categories
+- Location/geodata hierarchy
+- AI-generated tags
+- Media assets
+- Reviews/ratings
+- Campaign eligibility data
+
+## Integration Points
+
+- Ads Engine for sponsored placements
+- Provider System for provider lifecycle
+- GEO Authority Engine for location hierarchy
+- AI Enrichment Engine for descriptions, tags and classification
+- Analytics Layer for user events
+
+## Failure Modes
+
+- Missing provider data
+- Bad geodata mapping
+- duplicated providers
+- slow enrichment
+- stale categories
+- broken campaign injection
+
+## Observability
+
+Track:
+
+- query latency
+- zero-result searches
+- provider profile views
+- enrichment coverage
+- ranking overrides
+- sponsored impression injection
+
+## Security
+
+Provider data must respect role-based visibility. Admin-only operational notes cannot appear in public marketplace surfaces.

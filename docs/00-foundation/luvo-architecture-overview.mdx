@@ -1,0 +1,72 @@
+---
+id: LV-CORE-OV-002
+title: LUVO Architecture Overview
+status: approved
+version: 1.0.0
+owner: architecture
+reviewers:
+  - architecture
+  - product
+dependencies: ["LV-CORE-OV-001"]
+source_of_truth: true
+canonical: true
+last_updated: 2026-05-13
+---
+
+
+# LUVO Architecture Overview
+
+## Architecture Objective
+
+LUVO architecture must remain modular enough to support 100+ product, AI, operational and commercial modules without collapsing into undocumented dependencies.
+
+## Layered Architecture
+
+| Layer | Description |
+|---|---|
+| Experience Layer | Consumer app, provider dashboard, admin surfaces, editorial pages |
+| Product Engine Layer | Marketplace, Ads, Tourism, Delivery, Provider, Travel |
+| AI Operating Layer | Agents, prompt chains, enrichment pipelines, validation workflows |
+| Data Layer | Entities, schemas, geodata, campaign data, provider records, user profiles |
+| Operations Layer | Human review, onboarding, field sales, QA, escalation |
+| Governance Layer | ADRs, lifecycle policies, canonical registries, versioning |
+| Documentation Layer | Mintlify, GitHub, templates, changelogs, sprint history |
+
+## Stack
+
+- Base44 for application generation and low-code iteration.
+- React for interface components.
+- Tailwind for UI styling.
+- GitHub for version control and auditability.
+- Mintlify for public/internal documentation publishing.
+- MCP workflows for tool-connected AI operations.
+- Multi-agent AI for orchestration, execution and QA.
+
+## Module Boundary Rules
+
+A LUVO module must own a bounded business capability. It cannot redefine another module's data contract or operating logic.
+
+Examples:
+
+- Ads Engine owns campaign serving and impression attribution.
+- Marketplace Engine owns discovery and business/place ranking.
+- Tourism Engine owns tourist-facing context and trip recommendations.
+- Provider System owns provider onboarding and provider lifecycle.
+
+## Dependency Rules
+
+Dependencies must be explicitly listed in document frontmatter and repeated in technical dependency sections. Hidden dependencies are prohibited.
+
+## Architecture Review Triggers
+
+An ADR is mandatory when a change affects:
+
+- data models
+- AI orchestration
+- module boundaries
+- security
+- monetization logic
+- core ranking logic
+- external integrations
+- production workflows
+- canonical ownership

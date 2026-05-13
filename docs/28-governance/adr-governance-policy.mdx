@@ -1,0 +1,36 @@
+---
+id: LV-GOV-POL-002
+title: ADR Governance Policy
+status: approved
+version: 1.0.0
+owner: architecture
+reviewers:
+  - architecture
+  - product
+dependencies: []
+source_of_truth: true
+canonical: true
+last_updated: 2026-05-13
+---
+
+
+# ADR Governance Policy
+
+ADRs are immutable architecture decision records.
+
+## Numbering
+
+`LV-[DOMAIN]-ADR-[NUMBER]`
+
+## Required For
+
+- schema changes
+- module boundary changes
+- AI orchestration changes
+- security changes
+- monetization architecture changes
+- core data model changes
+
+## Immutability
+
+Approved ADRs cannot be edited to change historical meaning. Superseding requires a new ADR.

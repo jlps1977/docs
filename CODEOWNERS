@@ -1,0 +1,11 @@
+# LUVO Documentation Ownership
+
+/docs/00-foundation/ @luvo/architecture-council
+/docs/02-product/ @luvo/product
+/docs/03-engineering/ @luvo/engineering
+/docs/05-ai/ @luvo/ai-systems
+/docs/20-adrs/ @luvo/architecture-council
+/docs/21-prompts/ @luvo/ai-systems
+/docs/22-workflows/ @luvo/ai-systems @luvo/operations
+/docs/28-governance/ @luvo/architecture-council
+/mint.json @luvo/architecture-council

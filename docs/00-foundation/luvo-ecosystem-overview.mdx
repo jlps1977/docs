@@ -1,0 +1,94 @@
+---
+id: LV-CORE-OV-001
+title: LUVO Ecosystem Overview
+status: approved
+version: 1.0.0
+owner: architecture
+reviewers:
+  - architecture
+  - product
+dependencies: []
+source_of_truth: true
+canonical: true
+last_updated: 2026-05-13
+---
+
+
+# LUVO Ecosystem Overview
+
+LUVO is a local-first, AI-native platform designed to connect people, tourists, businesses, providers, restaurants, riders, advertisers, and local operators inside one modular city operating layer.
+
+## Strategic Position
+
+LUVO is not a single delivery app. It is a modular local commerce and city discovery platform that combines:
+
+- discovery
+- ordering
+- reservations
+- tourism
+- experiences
+- ads
+- analytics
+- provider operations
+- AI enrichment
+- geodata
+- editorial content
+- hybrid human + AI workflows
+
+## Brand Architecture
+
+LUVO is the parent platform. Subsystems should remain modular and independently documentable.
+
+| Module | Role |
+|---|---|
+| Luvo Food | Restaurant discovery, ordering, menu intelligence |
+| Luvo Guide | Tourism and city guide layer |
+| Luvo Places | Local discovery and reviews |
+| Luvo Reserve | Reservation infrastructure |
+| Luvo Deals | Offers, coupons, local promotions |
+| Luvo Ads | Advertising and sponsored visibility |
+| Luvo Pro | Provider dashboard and business tools |
+| Luvo Riders | Delivery operations |
+| Luvo Plus | Subscription and loyalty layer |
+
+## Platform Engines
+
+| Engine | Primary Function | Canonical Owner |
+|---|---|---|
+| Marketplace Discovery Engine | Discover businesses, places, menus and experiences | Product |
+| Ads Engine | Sponsored placements, campaigns, impressions and attribution | Growth/Product |
+| Tourism Engine | Tourist-facing local recommendations and itineraries | Product |
+| GEO Authority Engine | Geographic hierarchy, districts, POIs and semantic city mapping | Data |
+| Insider Engine | Editorial local intelligence and curated recommendations | Content/Product |
+| AI Enrichment Engine | Automated classification, tagging, descriptions and ranking support | AI Systems |
+| Delivery System | Dispatch, riders, pricing and delivery state | Operations |
+| Provider System | Merchant onboarding, profiles, opportunities and dashboards | Operations/Product |
+| Travel Engine | Tourist trip context, local exploration and itinerary logic | Product |
+
+## Single Source of Truth Principle
+
+Every LUVO module must have one canonical Product Sheet and one canonical Technical Sheet. Duplicates are prohibited. Supporting files may reference canonical files, but may not redefine core logic.
+
+## Operating Model
+
+LUVO coordinates three execution layers:
+
+1. Human operators: strategy, approvals, field sales, provider management, QA.
+2. AI agents: enrichment, classification, documentation, QA, prompt execution.
+3. Platform systems: Base44, React, Tailwind, GitHub, Mintlify, MCP workflows.
+
+## Enterprise Readiness Requirements
+
+Before any module is production-grade, it must include:
+
+- Product Sheet
+- Technical Sheet
+- Data model reference
+- Workflow documentation
+- Prompt registry entry if AI is involved
+- ADR when architectural choices are made
+- Changelog entry
+- Ownership
+- Status
+- Version
+- Dependencies

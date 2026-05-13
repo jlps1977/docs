@@ -1,0 +1,52 @@
+---
+id: LV-AI-WF-001
+title: Provider Classification Workflow
+status: approved
+version: 1.0.0
+owner: ai-systems
+reviewers:
+  - architecture
+  - product
+dependencies: ["LV-AI-OV-001"]
+source_of_truth: true
+canonical: true
+last_updated: 2026-05-13
+---
+
+
+# Provider Classification Workflow
+
+## Trigger
+
+New or updated provider record.
+
+## Inputs
+
+- provider name
+- category
+- location
+- menu or service description
+- website/social content when available
+
+## Outputs
+
+- normalized category
+- tags
+- short description
+- recommended marketplace placement
+- tourism relevance flag
+- human review flag
+
+## Agents
+
+- Data Agent
+- AI Enrichment Agent
+- QA Agent
+
+## Human Review
+
+Required when confidence is low, category affects ads, or provider description includes regulated claims.
+
+## Retry Logic
+
+Retry once with reduced context. Escalate to human reviewer after second failure.

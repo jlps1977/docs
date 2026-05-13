@@ -1,0 +1,73 @@
+---
+id: LV-AI-OV-001
+title: LUVO AI Operating System
+status: approved
+version: 1.0.0
+owner: ai-systems
+reviewers:
+  - architecture
+  - product
+dependencies: ["LV-CORE-OV-001", "LV-CORE-OV-002"]
+source_of_truth: true
+canonical: true
+last_updated: 2026-05-13
+---
+
+
+# LUVO AI Operating System
+
+## Purpose
+
+The LUVO AI Operating System defines how AI agents, prompts, MCP tools, human reviewers and documentation work together as a controlled execution infrastructure.
+
+## Agent Model
+
+| Agent | Responsibility |
+|---|---|
+| Project Leader | Converts strategic intent into execution briefs and sprint priorities |
+| Executor | Converts approved briefs into Base44 prompts or operational tasks |
+| QA Agent | Validates outputs, regressions, workflows, copy, data quality and UI behavior |
+| Documentation Architect | Maintains canonical docs, registries, ADRs and changelogs |
+| Growth Agent | Supports ads, acquisition, funnel analysis and campaign logic |
+| Ads Agent | Manages ad logic, campaign enrichment, sponsored placements and metrics |
+| Data Agent | Validates data quality, schemas, geodata, provider records and analytics |
+
+## AI Execution Principles
+
+- AI does not create canonical truth without governance.
+- AI outputs must be traceable to prompts, workflows and source documents.
+- Human approval is mandatory for production-impacting business logic.
+- Prompt changes are versioned.
+- Workflow changes are documented.
+- AI-generated content must declare validation requirements.
+
+## Handoff Model
+
+1. Project Leader creates execution brief.
+2. Documentation Architect checks canonical source alignment.
+3. Executor generates implementation prompt or task.
+4. Base44 or relevant tool executes.
+5. QA Agent tests and reports.
+6. Documentation Architect updates canonical docs, sprint registry and changelog.
+
+## Validation Layers
+
+| Layer | Validation |
+|---|---|
+| Prompt Validation | Input/output contract, guardrails, expected schema |
+| Workflow Validation | Trigger, retry logic, owner, human review point |
+| Product Validation | User value, monetization, KPI impact |
+| Technical Validation | Data model, dependencies, failure modes |
+| Governance Validation | Source of truth, version, status, approvals |
+
+## MCP Dependencies
+
+All workflows using external systems must document:
+
+- tool name
+- input contract
+- output contract
+- failure modes
+- retry strategy
+- human escalation
+- cost/latency expectations
