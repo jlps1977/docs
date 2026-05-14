@@ -1,0 +1,57 @@
+---
+title: Identity Trust System Overview
+status: production
+owner: identity-trust
+version: 1.0.0
+last_updated: 2026-05-13
+source_of_truth: true
+---
+
+# Identity Trust System Overview
+
+## Purpose
+
+The LUVO Identity + Trust System defines lightweight operational standards for user identity, provider trust, reputation, session context, review quality, and marketplace safety.
+
+This system is Base44-realistic and avoids enterprise IAM, biometric identity, distributed federation, and heavy risk infrastructure.
+
+## Trust Principle
+
+Trust must protect:
+
+- discovery integrity
+- tourism quality
+- provider quality
+- review integrity
+- marketplace quality
+
+## System Scope
+
+- user identity
+- provider trust
+- reputation signals
+- session intelligence
+- account states
+- moderation escalation
+- review integrity
+- fake engagement prevention
+- tourism trust
+
+## Trust Lifecycle
+
+```mermaid
+flowchart LR
+  A[Identity Signal] --> B[Trust Evaluation]
+  B --> C[Reputation State]
+  C --> D[Visibility Decision]
+  D --> E[Monitoring]
+  E --> F[Remediation]
+```
+
+## Operational Boundaries
+
+Base44 stores account, provider, reputation, review, and moderation records. Operators handle escalation and remediation. Advanced automated decision engines are out of scope for MVP.
+
+## MVP Scope
+
+The MVP supports lightweight identity states, provider trust tiers, review integrity checks, session context, and manual moderation workflows.
