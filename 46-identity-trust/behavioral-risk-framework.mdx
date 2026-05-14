@@ -1,0 +1,54 @@
+---
+title: Behavioral Risk Framework
+status: production
+version: 1.0.0
+---
+
+# Behavioral Risk Framework
+
+## Purpose
+
+Defines lightweight behavioral risk detection rules for marketplace integrity, recommendation trust, tourism safety, and moderation visibility.
+
+## Behavioral Risk Indicators
+
+- spam-like activity
+- fake review bursts
+- repeated moderation triggers
+- rapid account switching
+- abusive messaging patterns
+- suspicious recommendation manipulation
+- repeated reservation abuse
+
+## Risk Levels
+
+### Low Risk
+Normal operational behavior.
+
+### Medium Risk
+Requires visibility monitoring.
+
+### High Risk
+Triggers moderation escalation.
+
+## Behavioral Risk Lifecycle
+
+```mermaid
+flowchart LR
+A[Behavioral Signal] --> B[Risk Evaluation]
+B --> C[Visibility Controls]
+C --> D[Moderation Review]
+```
+
+## Safeguards
+
+Behavioral risk systems must:
+
+- preserve marketplace trust
+- avoid recommendation corruption
+- avoid tourism spam
+- avoid fake engagement amplification
+
+## MVP Boundary
+
+The MVP uses moderation-aware heuristics and operational rules without advanced fraud ML systems.
