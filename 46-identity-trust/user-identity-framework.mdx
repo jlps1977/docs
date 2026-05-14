@@ -1,0 +1,51 @@
+---
+title: User Identity Framework
+status: production
+version: 1.0.0
+---
+
+# User Identity Framework
+
+## Purpose
+
+Defines how LUVO manages lightweight user identity for discovery, tourism interaction, reservations, reviews, and marketplace participation.
+
+## Identity States
+
+- guest
+- registered
+- verified_contact
+- trusted_user
+- restricted
+- suspended
+
+## Core Signals
+
+- email verification
+- session consistency
+- reservation history
+- review consistency
+- moderation history
+- provider interactions
+
+## Identity Lifecycle
+
+```mermaid
+flowchart LR
+A[Guest] --> B[Registered]
+B --> C[Verified]
+C --> D[Trusted]
+D --> E[Restricted or Suspended]
+```
+
+## Operational Goals
+
+- preserve tourism trust
+- preserve review quality
+- reduce fake engagement
+- maintain lightweight onboarding
+- support marketplace moderation
+
+## MVP Boundary
+
+No biometric identity, distributed identity federation, or enterprise IAM is included in MVP.
