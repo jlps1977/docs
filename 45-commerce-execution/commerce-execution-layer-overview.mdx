@@ -1,0 +1,70 @@
+---
+title: Commerce Execution Layer Overview
+status: production
+owner: commerce-execution
+version: 1.0.0
+last_updated: 2026-05-13
+source_of_truth: true
+---
+
+# Commerce Execution Layer Overview
+
+## Purpose
+
+The LUVO Commerce Execution Layer defines how discovery, providers, orders, reservations, ads, monetization, payouts, and provider intelligence operate as a lightweight marketplace execution system.
+
+This layer does not introduce ERP complexity, fintech infrastructure, distributed orchestration, or autonomous commerce agents.
+
+## Commerce Definition
+
+```txt
+Commerce Execution Layer = providers + orders + reservations + ads + monetization + payouts + operational workflows + provider intelligence
+```
+
+## Commerce Principles
+
+Commerce must:
+
+- preserve discovery quality
+- preserve tourism UX
+- avoid ad spam
+- avoid marketplace degradation
+- prioritize local discovery
+- remain operationally lightweight
+
+## Marketplace Flow
+
+```mermaid
+flowchart LR
+  A[Discovery] --> B[Provider Surface]
+  B --> C[Commerce Intent]
+  C --> D[Order or Reservation]
+  D --> E[Provider Execution]
+  E --> F[Settlement]
+  F --> G[Telemetry]
+  G --> H[Provider Intelligence]
+```
+
+## Operational Boundaries
+
+Base44 stores marketplace records and renders operational dashboards. External operational processes may handle provider review, payout checks, and dispute handling. Payment rails, tax engines, lending, and banking infrastructure are out of scope for MVP.
+
+## MVP Scope
+
+- provider onboarding
+- provider verification
+- orders
+- reservations
+- sponsored placements
+- provider analytics
+- lightweight payout status
+- moderation and remediation
+
+## Out of Scope
+
+- card issuing
+- banking rails
+- lending systems
+- multi-country tax engines
+- distributed commerce orchestration
+- autonomous commerce AI
