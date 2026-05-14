@@ -1,0 +1,55 @@
+---
+title: Provider Operational Dashboard Framework
+status: production
+version: 1.0.0
+---
+
+# Provider Operational Dashboard Framework
+
+## Purpose
+
+Defines the operational dashboard surfaces available to providers inside LUVO.
+
+## Dashboard Modules
+
+- visibility overview
+- listing status
+- reservation activity
+- discovery performance
+- sponsored placement visibility
+- operational alerts
+- profile completeness
+
+## Operational Controls
+
+Providers may:
+
+- update availability
+- manage listing metadata
+- review visibility status
+- manage sponsored visibility
+- review operational notifications
+
+## UX Requirements
+
+Dashboards must remain:
+
+- mobile friendly
+- operationally simple
+- tourism-aware
+- lightweight
+- fast-loading
+
+## Dashboard Lifecycle
+
+```mermaid
+flowchart LR
+A[Provider Login] --> B[Operational Overview]
+B --> C[Visibility and Activity]
+C --> D[Operational Actions]
+D --> E[Telemetry]
+```
+
+## MVP Scope
+
+The MVP dashboard focuses on operational visibility and lightweight management controls. Advanced BI systems are out of scope.
