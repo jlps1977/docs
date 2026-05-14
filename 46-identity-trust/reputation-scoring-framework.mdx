@@ -1,0 +1,53 @@
+---
+title: Reputation Scoring Framework
+status: production
+version: 1.0.0
+---
+
+# Reputation Scoring Framework
+
+## Purpose
+
+Defines lightweight reputation evaluation standards for users and providers across discovery, tourism, reviews, reservations, and marketplace participation.
+
+## Reputation Principles
+
+Trust protects:
+
+- discovery integrity
+- tourism quality
+- provider quality
+- review integrity
+- marketplace trust
+- recommendation reliability
+
+## Reputation Inputs
+
+- review consistency
+- moderation history
+- reservation reliability
+- provider responsiveness
+- session consistency
+- community engagement quality
+
+## Reputation States
+
+- neutral
+- trusted
+- high_trust
+- restricted
+- suspended
+
+## Reputation Lifecycle
+
+```mermaid
+flowchart LR
+A[Activity Signal] --> B[Reputation Evaluation]
+B --> C[Visibility Impact]
+C --> D[Monitoring]
+D --> E[Escalation or Recovery]
+```
+
+## MVP Boundary
+
+The MVP uses operational scoring and moderation-aware heuristics. Advanced ML reputation systems remain out of scope.
