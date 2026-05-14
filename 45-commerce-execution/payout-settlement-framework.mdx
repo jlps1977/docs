@@ -1,0 +1,61 @@
+---
+title: Payout Settlement Framework
+status: production
+owner: commerce-execution
+version: 1.0.0
+last_updated: 2026-05-13
+source_of_truth: true
+---
+
+# Payout Settlement Framework
+
+## Purpose
+
+Defines the lightweight operational model for provider settlement tracking in LUVO Commerce Execution.
+
+This framework does not implement banking rails, card issuing, lending, tax engines, or complex financial infrastructure.
+
+## Settlement Lifecycle
+
+```mermaid
+flowchart LR
+  A[Commerce Event] --> B[Settlement Pending]
+  B --> C[Review Window]
+  C --> D[Approved Batch]
+  D --> E[Settlement Recorded]
+  E --> F[Provider Statement]
+```
+
+## MVP Assumptions
+
+- LUVO tracks settlement status operationally.
+- External payment processors may handle actual movement of funds.
+- Provider statements are informational records.
+- Exceptions require operator review.
+
+## Settlement States
+
+- pending
+- under_review
+- approved
+- recorded
+- exception
+- closed
+
+## Reconciliation Inputs
+
+- provider id
+- commerce event id
+- settlement window
+- gross amount snapshot
+- platform fee snapshot
+- adjustment notes
+- final status
+
+## Failed Settlement Handling
+
+If a settlement cannot be recorded, the record enters exception state and is reviewed by operations.
+
+## Operational Boundary
+
+Settlement documentation is operational tracking only. Payment processor implementation is out of scope for MVP.
