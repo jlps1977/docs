@@ -1,0 +1,42 @@
+---
+title: Contextual Recommendation Engine
+status: production
+version: 1.0.0
+---
+
+# Contextual Recommendation Engine
+
+## Purpose
+
+Defines contextual recommendation orchestration using lightweight operational signals.
+
+## Context Signals
+
+- time of day
+- location proximity
+- tourism mode
+- session depth
+- weather context
+- vibe alignment
+- exploration history
+
+## Recommendation Priorities
+
+- preserve recommendation diversity
+- surface tourism-relevant places
+- preserve local authenticity
+- avoid repetitive recommendation chains
+
+## Recommendation Flow
+
+```mermaid
+flowchart LR
+A[Context Signals] --> B[Candidate Pool]
+B --> C[Context Ranking]
+C --> D[Diversity Validation]
+D --> E[Recommendation Rendering]
+```
+
+## MVP Boundary
+
+The engine uses operational heuristics and metadata-driven ranking without ML inference infrastructure.
